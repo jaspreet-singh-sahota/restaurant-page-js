@@ -1,9 +1,7 @@
-import "./style.css"
-console.log('testing')
+import "./styles/style.css"
+import home from './js/background';
 
 
-function component() {
- 
-}
 
-document.body.appendChild(component());
+  const content = document.getElementById('content');
+  content.appendChild(home);

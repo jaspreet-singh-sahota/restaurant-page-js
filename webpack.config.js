@@ -1,6 +1,9 @@
 const path = require('path')
 
+// string = 'production': 'none' | 'development' | 'production'
+
 module.exports = {
+  // mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -15,6 +18,28 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader',
+        ],
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      }
     ]
-  }
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
 }
