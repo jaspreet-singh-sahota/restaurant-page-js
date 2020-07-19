@@ -7,8 +7,123 @@
     <title>Resturant-Page</title>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <div class="mySlides">
+        <div class="flex-container">
+          <div class="row ">
+            <div class="avatar-container">
+                <img class="img" src="https://i.guim.co.uk/img/media/39e421c6dd29c213b6015bb2f38123a6d2dbd0ca/0_0_4724_4724/master/4724.jpg?width=620&quality=85&auto=format&fit=max&s=f9ed7456342414268f32072f276854b2" />
+            </div>
+            <div class="details-container">
+                <h3>Joe Doe <span class="price">19$</span></h3>
+                <p class="button">Order</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="avatar-container">
+                <img class="img" src="https://be35832fa5168a30acd6-5c7e0f2623ae37b4a933167fe83d71b5.ssl.cf3.rackcdn.com/4152/miguel_barclay_mushroom_risotto__square.jpg" />
+            </div>
+            <div class="details-container">
+                <h3>Joe Doe <span class="price">19$</span></h3>
+                <p class="button">Order</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="avatar-container">
+              <img class="img" src="https://i.pinimg.com/originals/17/af/b7/17afb750d5a20efd1ba6b056f63ecf0c.jpg" />
+            </div>
+            <div class="details-container">
+                <h3>Joe Doe <span class="price">19$</span></h3>
+                <p class="button">Order</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="flex-container">
+          <div class="row ">
+            <div class="avatar-container">
+              <img class="img"
+                src="https://ichef.bbci.co.uk/images/ic/1280xn/p079jhrl.jpg" />
+            </div>
+            <div class="details-container">
+              <h3>Joe Doe <span class="price">19$</span></h3>
+              <p class="button">Order</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="avatar-container">
+              <img class="img"
+                src="https://i.guim.co.uk/img/media/82a2181601e540a4f3a8f19607f13ff54b0c4762/0_0_4724_4724/master/4724.jpg?width=620&quality=85&auto=format&fit=max&s=80b30025f2d9967fd93d080b14acc5cd" />
+            </div>
+            <div class="details-container">
+              <h3>Joe Doe <span class="price">19$</span></h3>
+              <p class="button">Order</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="avatar-container">
+              <img class="img" src="https://i.guim.co.uk/img/media/06aa3a3a28128f3abc37e4488607b73b744bd611/0_0_4724_4724/master/4724.jpg?width=1225&quality=85&auto=format&fit=max&s=a1eacfa0cc1ca9a2133d037556ab4912" />
+            </div>
+            <div class="details-container">
+              <h3>Joe Doe <span class="price">19$</span></h3>
+              <p class="button">Order</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="flex-container">
+          <div class="row ">
+            <div class="avatar-container">
+                <img class="img" src='https://i.pinimg.com/originals/dd/d2/61/ddd2611e5c59653af11854204397d08d.jpg' />
+            </div>
+            <div class="details-container">
+                <h3>Joe Doe <span class="price">19$</span></h3>
+                <p class="button">Order</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="avatar-container">
+                <img class="img" src="https://i.pinimg.com/736x/92/f5/1e/92f51e8f0a5a826320175da4835d05cc.jpg" />
+            </div>
+            <div class="details-container">
+                <h3>Joe Doe <span class="price">19$</span></h3>
+                <p class="button">Order</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="avatar-container">
+              <img class="img" src="https://www.drinkstuff.com/productimg/154483_large.jpg" />
+            </div>
+            <div class="details-container">
+                <h3>Joe Doe <span class="price">19$</span></h3>
+                <p class="button">Order</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="slider-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="slider-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
     
     <script src="main.js"></script>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+    
+      function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex=x.length} for (i=0; i < x.length; i++) { x[i].style.display="none" ; }
+    x[slideIndex-1].style.display="block" ; }
+    </script>
   </body>
 </html>

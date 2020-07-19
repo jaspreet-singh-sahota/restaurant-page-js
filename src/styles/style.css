@@ -1,3 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -44,14 +99,17 @@ header nav {
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  height: 75px;
 }
 
 .fly-dining-logo {
-  margin: 2vh 0 2vh 8vh;
+  margin-left: 12vh;
 }
 
 .header-logo {
-  width: 200px;
+  position: relative;
+  top: 10.5px;
+  width: 195px;
 }
 
 nav .nav-list {
@@ -65,7 +123,7 @@ nav .nav-list {
 }
 
 .nav-list .nav-links {
-  padding: 28px;
+  padding: 22.5px;
   font-size: 25px;
   font-weight: bolder;
   letter-spacing: 2px;
@@ -83,7 +141,6 @@ nav .nav-list {
   font-size: 40px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
-  /* background-color: rgba(0, 0, 0, 0.2); */
   font-weight: bolder;
 }
 
@@ -105,5 +162,88 @@ button {
   left: 65%;
 }
 
+  
+  
+.mySlides {display:none;}
+  
+.row {
+  width: 27%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #ff5a5f;
+  height: 393px;
+  margin: 1vw;
+}
 
+.img {
+height: 347px;
+width: 100%;
+background-size:cover
+}
+
+.details-container {
+  width: 100%;
+}
+h3 {
+  width: 100%;
+  position: relative;
+  bottom: 38px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4.7px;
+  font-size: 25px;
+}
+
+.price {
+  padding-left: 14vw;
+}
+
+.button {
+  width: 100%;
+  position: relative;
+  bottom: 38px;
+  background-color: #ff5a5f;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-display-left {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+
+.slider-display-right {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+}
+
+/* 
+.details-container {
+    flex: 2;
+}
+
+.avatar-container {
+    flex: 1;
+}
+
+.avatar-container {
+    flex-basis: 250px;
+}
+
+.column {
+  flex: 1; */
+/* } */
 
