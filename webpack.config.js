@@ -1,7 +1,5 @@
 const path = require('path')
 
-// string = 'production': 'none' | 'development' | 'production'
-
 module.exports = {
   // mode: 'development',
   entry: './src/index.js',
