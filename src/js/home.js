@@ -59,6 +59,9 @@ const home = (() => {
   const button = document.createElement('button');
   button.textContent = 'Book Now'
 
+  divInfo.appendChild(paragraph);
+  divInfo.appendChild(button);
+
   home.appendChild(homeLink);
   menu.appendChild(menuLink);
   contact.appendChild(contactLink);
@@ -70,6 +73,7 @@ const home = (() => {
   nav.appendChild(logoLink);
   nav.appendChild(navList);
   header.appendChild(nav);
+  header.appendChild(divInfo);
 
   return header
 })();
