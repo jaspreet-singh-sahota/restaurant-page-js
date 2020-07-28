@@ -221,9 +221,30 @@ h3 {
   left: 95%;
 }
 
-/* 
-.details-container {
-    flex: 2;
+.background-blur {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(25px);
+  border: 2px solid #ff5a5f;
+  z-index: -1;
+}
+
+.header-menu {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bolder;
+  color: white;
 }
 
 .avatar-container {
@@ -235,6 +256,6 @@ h3 {
 }
 
 .column {
-  flex: 1; */
-/* } */
+  flex: 1;
+}
 

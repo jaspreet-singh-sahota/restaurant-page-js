@@ -85,13 +85,21 @@ const menu = (() => {
   const slider1 = flexContainer(link1, link2, link3);
   const slider2 = flexContainer(link4, link5, link6);
   const slider3 = flexContainer(link7, link8, link9);
+  const backgroundBlur = document.createElement('div')
+  backgroundBlur.setAttribute('class', 'background-blur')
+  backgroundBlur.style.display = 'block'
+  const header = document.createElement('header')
+  header.setAttribute('class', 'header-menu')
+  header.textContent = 'Enjoy a taste of heaven'
 
   const sliderWrapper = document.createElement('div')
   sliderWrapper.appendChild(slider3);
   sliderWrapper.appendChild(slider2);
   sliderWrapper.appendChild(slider1);
   sliderWrapper.appendChild(leftButton);
-  sliderWrapper.appendChild(rightButton)
+  sliderWrapper.appendChild(rightButton);
+  sliderWrapper.appendChild(backgroundBlur)
+  sliderWrapper.appendChild(header)
 
   return sliderWrapper
 })();
