@@ -12,14 +12,6 @@ module.exports = {
     filename: '[name].main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        paths: ['./src']
-      }
-    }
-  },
   plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
   module: {
     rules: [
