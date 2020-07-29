@@ -5,16 +5,16 @@ const home = (() => {
   const paragraph = document.createElement('p');
   divInfo.setAttribute('class', 'info');
   paragraph.setAttribute('class', 'restaurant-info');
-  paragraph.textContent = 'MOST AMAZING DINING RIDE'
+  paragraph.textContent = 'MOST AMAZING DINING RIDE';
 
   const button = document.createElement('button');
-  button.textContent = 'Book Now'
+  button.textContent = 'Book Now';
 
   divInfo.appendChild(paragraph);
   divInfo.appendChild(button);
   header.appendChild(divInfo);
 
-  return header
+  return header;
 })();
 
 export default home;

@@ -1,27 +1,28 @@
+/* eslint-disable no-undef */
 const googleMap = () => {
-  function init_map() {
-    var myOptions = {
+  function initMap() {
+    const myOptions = {
       zoom: 14,
       center: new google.maps.LatLng(28.7041, 77.1025),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
     };
-    let map = new google.maps.Map(document.getElementById('draggable-google-map'), myOptions);
-    let marker = new google.maps.Marker({
-      map: map,
-      position: new google.maps.LatLng(28.7041, 77.1025)
+    const map = new google.maps.Map(document.getElementById('draggable-google-map'), myOptions);
+    const marker = new google.maps.Marker({
+      map,
+      position: new google.maps.LatLng(28.7041, 77.1025),
     });
-    let infowindow = new google.maps.InfoWindow({
-      content: '<strong>Fly Dining</strong><br>Delhi<br>'
+    const infowindow = new google.maps.InfoWindow({
+      content: '<strong>Fly Dining</strong><br>Delhi<br>',
     });
-    google.maps.event.addListener(marker, 'click', function () {
+    google.maps.event.addListener(marker, 'click', () => {
       infowindow.open(map, marker);
     });
     infowindow.open(map, marker);
   }
 
   setTimeout(() => {
-    init_map();
-  }, 150);
-}
+    initMap();
+  }, 200);
+};
 
-export {googleMap}
+export default googleMap;
