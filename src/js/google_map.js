@@ -21,7 +21,7 @@ const googleMap = () => {
 
   setTimeout(() => {
     init_map();
-  }, 500);
+  }, 150);
 }
 
 export {googleMap}

@@ -69,8 +69,8 @@ const menu = (() => {
   }
 
   setTimeout(() => {
-    showDivs(slideIndex);
     const plusDivs = (n) => {
+      showDivs(slideIndex);
       showDivs(slideIndex += n);
     }
     leftButton.onclick = () => plusDivs(-1);

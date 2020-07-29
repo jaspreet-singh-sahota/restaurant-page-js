@@ -18,6 +18,7 @@ const navbar = (() => {
   const home = document.createElement('li');
   const homeLink = document.createElement('a');
   home.setAttribute('class', 'nav-links');
+  home.setAttribute('id', 'recent-tab');
   homeLink.setAttribute('href', '#');
   homeLink.textContent = "Home";
   
