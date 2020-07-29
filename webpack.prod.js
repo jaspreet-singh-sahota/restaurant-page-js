@@ -1,4 +1,4 @@
-/* eslint-disable import/import/no-unresolved */
+/* eslint-disable import/no-unresolved */
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
