@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable import/no-unresolved */
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -11,6 +11,14 @@ module.exports = {
   output: {
     filename: '[name].main.js',
     path: path.resolve(__dirname, 'dist'),
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        paths: ['./src']
+      }
+    }
   },
   plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
   module: {

@@ -14,6 +14,14 @@ module.exports = {
     filename: '[name].[contentHash].main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        paths: ['./src']
+      }
+    }
+  },
   plugins: [
     new MiniCssExtractPlugin({ filename: '[name].[contentHash].css' }),
     new CleanWebpackPlugin(),

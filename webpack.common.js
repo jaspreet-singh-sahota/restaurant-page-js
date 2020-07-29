@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable import/no-unresolved */
 
 module.exports = {
   entry: './src/index.js',
