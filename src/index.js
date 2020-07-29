@@ -14,4 +14,5 @@ content.appendChild(navbar);
 // content.appendChild(menu);
 content.appendChild(contact[0]);
 content.appendChild(contact[1]);
+content.appendChild(contact[2]);
 googleMap()
