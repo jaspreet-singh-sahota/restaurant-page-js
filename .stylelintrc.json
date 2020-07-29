@@ -8,7 +8,10 @@
   "ignoreFiles": [
     "build/**",
     "dist/**",
+    "**/package-lock.json",
+    "**/package.json",
     "**/reset*.css",
-    "**/bootstrap*.css"
+    "**/bootstrap*.css",
+    "**/background.mp4"
   ]
 }
