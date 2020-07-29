@@ -1,50 +1,136 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-    line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-    list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-    quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
 }
+
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
@@ -115,12 +201,12 @@ nav .nav-list {
 
 .nav-list .nav-links:hover {
   background-color: rgba(255, 255, 255, 0.7);
-  color: #ff5a5F;
+  color: #ff5a5f;
 }
 
 #recent-tab {
   background-color: rgba(255, 255, 255, 0.9);
-  color: #ff5a5F;
+  color: #ff5a5f;
 }
 
 .restaurant-info {
@@ -132,7 +218,7 @@ nav .nav-list {
 
 button {
   font-size: 20px;
-  background-color:#ff5a5f;
+  background-color: #ff5a5f;
   border: 1px solid #ff5a5f;
   color: white;
   padding: 7px;
@@ -147,7 +233,7 @@ button {
   top: 40%;
   left: 65%;
 }
-  
+
 .row {
   width: 27%;
   display: flex;
@@ -158,14 +244,15 @@ button {
 }
 
 .img {
-height: 347px;
-width: 100%;
-background-size:cover
+  height: 347px;
+  width: 100%;
+  background-size: cover;
 }
 
 .details-container {
   width: 100%;
 }
+
 h3 {
   width: 100%;
   position: relative;
@@ -240,15 +327,8 @@ h3 {
 }
 
 .avatar-container {
-    flex: 1;
-}
-
-.avatar-container {
-    flex-basis: 250px;
-}
-
-.column {
   flex: 1;
+  flex-basis: 250px;
 }
 
 #draggable-google-map {
@@ -260,7 +340,9 @@ h3 {
   width: 30%;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -299,7 +381,7 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-.row-contact:after {
+.row-contact::after {
   content: "";
   display: table;
   clear: both;
@@ -318,4 +400,3 @@ label {
   height: 100%;
   z-index: -1;
 }
-
