@@ -5,6 +5,7 @@ const contact = (() => {
   const backgroundImg = document.createElement('img');
   backgroundImg.src = 'https://www.flydining.com/wp-content/uploads/2020/01/gallery-slide-compressed.jpg';
   backgroundImg.style.width = '100%';
+  backgroundImg.style.height = '100%';
   const containerContactDiv = document.createElement('div');
   containerContactDiv.setAttribute('class', 'container-contact');
   const rowDiv = document.createElement('div');
