@@ -401,3 +401,7 @@ label {
   height: 100%;
   z-index: -1;
 }
+
+.color-overlay {
+  height: 100%;
+}
