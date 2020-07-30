@@ -22,7 +22,7 @@ const googleMap = () => {
 
   setTimeout(() => {
     initMap();
-  }, 200);
+  }, 300);
 };
 
 export default googleMap;

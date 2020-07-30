@@ -10,7 +10,6 @@ const backgroundVideo = (() => {
   video.setAttribute('muted', '');
   video.setAttribute('autoplay', '');
   video.setAttribute('loop', '');
-  video.style.width = '100%';
   source.setAttribute('src', videoLink);
   source.setAttribute('type', 'video/mp4');
 
