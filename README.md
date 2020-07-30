@@ -56,9 +56,11 @@ In this project, we have to build a Restaurant Page. This project is for practis
 - Tab Switching functionality
 - Carousel Functionality (In menu page)
 
-## Live Link 
+Note:- There is only one Div in the HTML page, the whole project is built from JavaScript(DOM)
 
-[Click Here](https://raw.githack.com/jaspreet-singh-sahota/restaurant-page-js/feature-todo/dist/index.html)
+## Live Link (Netlify)
+
+[Click Here](https://vigorous-hoover-ff1eb2.netlify.app)
 
 
 <!-- BUILD WITH -->
@@ -67,10 +69,9 @@ In this project, we have to build a Restaurant Page. This project is for practis
 This project was built using these technologies.
 * HTML
 * CSS
-* JavaScript
+* JavaScript(Es-6)
 * Web-pack
 
-#### Note:- There is only one Div in the HTML page, the whole project is built from JavaScript(DOM)
 
 ### Install
 
